@@ -1,0 +1,19 @@
+<p style="text-align: center;">[[module:events]]</p>
+
+<p style="text-align: center;">[[module:links_list]]</p>
+
+<p style="text-align: center;">[[module:officers]]</p>
+<script>tdNum = 0;
+count = 0;
+$("td").each(function(){
+this.tdId = count++;
+if(this.innerHTML=="About Emily"){
+console.log("found");
+tdNum = this.tdId+1;
+}
+}
+)
+zofsFb="<a href='https://www.facebook.com/emarzofka'>Emily's facebook</a>";
+dinosaur='<img src="http://www.qwantz.com/comics/comic2-3179.png" />';
+//$("td")[tdNum].innerHTML=dinosaur; // commenting out this line will disable emily's bio override
+</script>
